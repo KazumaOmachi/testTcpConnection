@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{A7668D2E-7A8D-4026-9B67-4FD6FED1837F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="tcpconnect/Program.cs">
+    <Files>
+      <File FileName="testTcpComunication/Program.cs" Line="19" Column="13" />
+      <File FileName="tcpconnect/Program.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.testTcpComunication PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
