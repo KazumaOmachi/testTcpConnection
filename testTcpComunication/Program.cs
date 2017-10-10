@@ -34,6 +34,13 @@ namespace testTcpComunication
 
 			System.Net.Sockets.NetworkStream ns = client.GetStream();
 			Console.WriteLine("connect");
+
+			byte[] readBytes = new byte[4];
+
+			int resSize = ns.Read(readBytes, 0, readBytes.Length);
+			int i = BitConverter.ToInt32(readBytes, 0);
+
+			Console.WriteLine(readBytes + " : " + i);
 		}
 	}
 }

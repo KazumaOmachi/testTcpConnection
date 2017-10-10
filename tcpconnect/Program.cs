@@ -14,6 +14,16 @@ namespace tcpconnect
 
 			//TcpClientを作成し、サーバーと接続する
 			System.Net.Sockets.TcpClient tcp = new System.Net.Sockets.TcpClient(ipOrHost, port);
+			System.Net.Sockets.NetworkStream ns = tcp.GetStream();
+
+			//string sendMsg = "hohohohohoho";
+			//byte[] sendBytes = enc.GetBytes(sendMsg + '\n');
+
+			byte[]  sendBytes = BitConverter.GetBytes(5);
+			System.Text.Encoding enc = System.Text.Encoding.UTF8;
+			ns.Write(sendBytes, 0, sendBytes.Length);
+			Console.WriteLine(sendBytes);
+
 		}
 	}
 }
