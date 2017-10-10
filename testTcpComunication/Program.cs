@@ -40,7 +40,7 @@ namespace testTcpComunication
 			int resSize = ns.Read(readBytes, 0, readBytes.Length);
 			int i = BitConverter.ToInt32(readBytes, 0);
 
-			Console.WriteLine(readBytes + " : " + i);
+			Console.WriteLine(readBytes + " --> " + i);
 		}
 	}
 }
